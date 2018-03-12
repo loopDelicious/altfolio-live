@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cleave.js": "^1.0.9",
     "cryptocurrency-icons": "git+ssh://git@github.com:pastudan/cryptocurrency-icons.git",
+    "express": "^4.16.2",
     "hot-shots": "^5.0.0",
     "lodash": "^4.17.4",
     "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "pm2": "^2.10.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-odometer": "^0.0.1",
@@ -16,13 +22,18 @@
     "reconnecting-websocket": "^3.2.2",
     "redis": "^2.8.0",
     "request": "^2.83.0",
+    "sequelize": "^4.36.0",
     "socket.io-client": "^2.0.4",
     "ws": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:dev": "nodemon ./bin/www",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom && echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
   }
 }
