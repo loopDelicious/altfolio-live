@@ -34,6 +34,7 @@ class Header extends Component {
             <div className={`radio-group-option ${this.props.changeWindow === 'percent_change_7d' ? 'selected' : ''}`} onClick={this.props.updateChangeWindow.bind(this, 'percent_change_7d')}>7d</div>
           </section>
         </div>
+        <button className="sign-in radio-group">Sign in</button>
       </div>
       <div className="Header-subheader">
         <div className="Header-subheader-container">

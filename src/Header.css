@@ -75,6 +75,17 @@
   color: var(--siteColor);
 }
 
+.Header .sign-in {
+  background-color: var(--siteColor);
+  color: white;
+  border-radius: 4px;
+  padding: 5px 9px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:focus {outline:0;}
+
 @media (max-width: 1120px) {
   .Header-optional {
     display: none;
